@@ -1,72 +1,51 @@
+
+# Registro de vehiculos y usuarios
+
+Este proyecto consiste en la implementación de un sistema de registro de vehículos y usuarios, además de la visualización de la marca y  la placa de cada vehículo y estadísticas que consiste en el conteo de vehículos por marcas.
+
+Este proyecto implementa una solución para dar respuesta al siguiente ejercicio:
+
+Cree una aplicación web en PHP utilizando Laravel que permita acceder a la zona de login y
+realizar las siguientes acciones:
+1. Acceder a la zona de inicio: para acceder a la zona de inicio se debe enviar por la
+URL el código: A765. En caso de que el código sea válido se desplegarán 3 enlaces,
+el primero a “registrar vehículos”, el segundo a “listar vehículos” y el tercero a
+“estadísticas vehículos”. En caso contrario deberá desplegar un mensaje que diga
+zona prohibida.
+1. Registrar vehículos: Cree un sistema que permita registrar tanto vehículos como
+dueños al mismo tiempo. En un mismo formulario recoja todos los datos y registre los
+datos de las 2 tablas.
+Nota: se recomienda registrar primero los datos de los dueños para evitar problemas
+de claves foráneas inexistentes. Registre 2 vehículos y 2 dueños. Verifique
+únicamente que la marca sea válida.
+1. Listar vehículos: Liste todos los vehículos con los siguientes datos: placa y marca;
+para los vehículos tipo Mazda muestre al lado de la placa un mensaje en verde que
+diga (“Los de Mazda son los mejores”) y para los vehículos tipo Toyota muestra la
+placa en rojo y negrilla.
+1. Estadísticas vehículos: Muestre cuántos vehículos de cada tipo existen registrados
+en el sistema (por ejemplo: 3 Mazda, 2 Toyota, 0 Chevrolet)
+
+Una vez inciado el proyecto los pasos para ingresar a la zona de inicio es el siguiente
+1. Ingresar en la url el siguiente código: A765, una vez el código sea validado por el sistema devuelve una la vista zona de inicio en donde se encuentran habilitados los tres enlaces correspondientes al ejercicio 1 con sus respectivas descripciones de cada uno.
+En caso que el código no sea correcto se mostrará el texto "Zona prohíbida"
+
+### Registro de usuarios
+1. Clic en "Registrar Usuarios" de la "Zona de Inicio".
+2. Llenar el formulario con los datos solicitados y dar clic en "Registrar", en caso de que los datos solicitados sean llenado correctamente(ningun campo vacío y marca=MAZDA,CREVROLET,TOYOTA) aparecerá el letrero "Registro exitoso"
+
+### Listado de Vehículos
+Clic en "Listar Vehículos" de la "Zona de Incio"
+Aparecerá el listado de los vehículos por marca y placa siguiendo las reglas del ejecicio 3
+
+### Estadíscitasd de Vehículos
+Clic en "Estadíscitasd de Vehículos" de la "Zona de Incio"
+Aparecerá la cantida de vehículos por cada marca
+
+
+
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
