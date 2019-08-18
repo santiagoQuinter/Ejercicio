@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('index2', function() {
+    return view('index2');
+});
+
+Route::get('listarvehiculos','VehiculoController@index')->name('listarvehiculos');
+Route::get('estadisticasvehiculos','VehiculoController@estadistica')->name('estadisticasvehiculos');
+Route::get('registrarvehiculos','DuenoController@index')->name('registrarvehiculos');
+Route::get('/{id}', 'DuenoController@show');
+Route::resource('duenos', 'DuenoController');
+
