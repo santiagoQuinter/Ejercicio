@@ -26,26 +26,25 @@ placa en rojo y negrilla.
 en el sistema (por ejemplo: 3 Mazda, 2 Toyota, 0 Chevrolet)
 
 Una vez inciado el proyecto los pasos para ingresar a la zona de inicio es el siguiente
-1. Ingresar en la url el siguiente código: A765, una vez el código sea validado por el sistema devuelve una la vista zona de inicio en donde se encuentran habilitados los tres enlaces correspondientes al ejercicio 1 con sus respectivas descripciones de cada uno.
+1. Ingresar en la url el siguiente código: A765, una vez el código sea validado por el sistema, este devuelve la vista que contiene zona de inicio, en donde se encuentran habilitados los tres enlaces correspondientes al ejercicio 1 con sus respectivas descripciones de cada uno.
 En caso que el código no sea correcto se mostrará el texto "Zona prohíbida"
 
-### Registro de usuarios
+<p align="center"><img src="https://raw.githubusercontent.com/santiagoQuinter/Ejercicio/master/img/zona%20inicio.PNG"></p>
+
+### Registro de Usuarios
 1. Clic en "Registrar Usuarios" de la "Zona de Inicio".
-2. Llenar el formulario con los datos solicitados y dar clic en "Registrar", en caso de que los datos solicitados sean llenado correctamente(ningun campo vacío y marca=MAZDA,CREVROLET,TOYOTA) aparecerá el letrero "Registro exitoso"
+2. Llenar el formulario con los datos solicitados y dar clic en "Registrar", en caso de que los datos solicitados sea ingresen correctamente(ningun campo vacío y marca=MAZDA,CREVROLET,TOYOTA) aparecerá el letrero "Registro exitoso"
+
+<p align="center"><img src="https://raw.githubusercontent.com/santiagoQuinter/Ejercicio/master/img/Registro%20usuarios.PNG"></p>
 
 ### Listado de Vehículos
-Clic en "Listar Vehículos" de la "Zona de Incio"
+Clic en "Listar Vehículos" de la "Zona de Inicio"
 Aparecerá el listado de los vehículos por marca y placa siguiendo las reglas del ejecicio 3
 
-### Estadíscitasd de Vehículos
-Clic en "Estadíscitasd de Vehículos" de la "Zona de Incio"
-Aparecerá la cantida de vehículos por cada marca
+<p align="center"><img src="https://raw.githubusercontent.com/santiagoQuinter/Ejercicio/master/img/Lista%20vehiculos.PNG"></p>
 
+### Estadísticas de Vehículos
+Clic en "Estadísticas de Vehículos" de la "Zona de Inciio"
+Aparecerá la cantidad de vehículos por cada marca
 
-
-
-
-
-
-
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/santiagoQuinter/Ejercicio/master/img/Estadistica%20de%20vehiculos.PNG"></p>
