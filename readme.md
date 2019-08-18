@@ -1,7 +1,7 @@
 
 # Registro de vehiculos y usuarios
 
-Este proyecto consiste en la implementación de un sistema de registro de vehículos y usuarios, además de la visualización de la marca y  la placa de cada vehículo y estadísticas que consiste en el conteo de vehículos por marcas.
+Este proyecto consiste en la implementación de un sistema de registro de vehículos y usuarios, además de la visualización de la marca,  la placa de cada vehículo y estadísticas que consiste en el conteo de vehículos por marcas.
 
 Este proyecto implementa una solución para dar respuesta al siguiente ejercicio:
 
